@@ -20,7 +20,7 @@ import {
 const QuestionDetails = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const url = "http://localhost:3000";
+  const url = "https://stack-overflow-mern.onrender.com";
   const dispatach = useDispatch();
   const { id } = useParams();
   const questionsList = useSelector((state) => state.questionsReducer);
