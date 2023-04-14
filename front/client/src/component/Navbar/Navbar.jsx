@@ -5,7 +5,6 @@ import search from "../../assests/search-solid.svg";
 import Avatar from "../../component/Avatar/Avatar";
 import "./Navbar.css";
 import { useSelector, useDispatch } from "react-redux";
-import currentUserReducer from "../../reducers/currentUser";
 import { setCurrentUser } from "../../actions/currentUser";
 import { useNavigate } from "react-router-dom";
 import decode from "jwt-decode";
@@ -23,7 +22,7 @@ function Navbar() {
       }
     }
     dispatch(setCurrentUser(JSON.parse(localStorage.getItem("Profile"))));
-  }, [dispatch]);
+  }, [dispatch]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
