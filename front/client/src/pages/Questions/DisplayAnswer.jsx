@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import moment from "moment";
 import Avatar from "../../component/Avatar/Avatar";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteAnswer } from "../../actions/question";
