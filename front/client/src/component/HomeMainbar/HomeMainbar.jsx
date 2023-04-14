@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeMainbar.css";
-import {  useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import QuestionList from "./QuestionList";
 const HomeMainbar = () => {
